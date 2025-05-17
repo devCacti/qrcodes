@@ -1,0 +1,119 @@
+.title,
+.subtitle {
+    pointer-events: none;
+}
+
+h1.title {
+    text-align: center;
+    font-size: 3em;
+    text-align: center;
+    color: #fefeff;
+    margin-top: 20px;
+}
+
+h2.subtitle {
+    text-align: center;
+    font-size: 1.75em;
+    text-align: center;
+    color: #fefeff;
+}
+* {
+    text-align: center;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: underline;
+    color: #fefeff;
+    text-shadow: rgb(0, 0, 0, 1) 0px 0px 15px;
+}
+
+.nickname {
+    color: #1ca500;
+    text-shadow: rgb(0, 0, 0, 1) 0px 0px 15px;
+}
+
+/*Text aligned horizontally in the center*/
+.phrase {
+    text-align: center;
+    align-items: center;
+    color: #fefeff;
+    text-shadow: rgb(0, 0, 0, 1) 0px 0px 15px;
+}
+
+.info.title {
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 0.025em;
+    text-shadow: rgb(255, 255, 255) 0px 0px 20px;
+    color: #fefeff;
+}
+
+.info.subtitle {
+    text-decoration: underline;
+}
+
+h2.info {
+    text-decoration: underline;
+    /*Underline size*/
+    text-underline-offset: 0.9em;
+    text-decoration-thickness: 0.01em;
+    text-decoration-color: #a1a1a1;
+}
+
+.no-deco {
+    text-decoration: none !important;
+}
+
+a.toc-index {
+    font-size: 1.5rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.small {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.index-title h1,
+.index-title a {
+    font-size: 2.5rem;
+    color: #fff;
+
+    margin: 0;
+}
+
+.index-title a {
+    text-decoration: none;
+    color: #6082ff;
+}
+
+.index-title {
+    font-weight: 700;
+    color: #fff;
+    flex-direction: row;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.golden {
+    color: #ffe346;
+    text-shadow: rgb(0, 0, 0, 1) 0px 0px 15px;
+}
+
+.heart {
+    color: #ff0deb !important;
+    text-shadow: #ff00ea 0px 0px 15px;
+}
+
+footer div p {
+    margin: 10px;
+
+}
