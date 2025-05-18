@@ -1,6 +1,6 @@
 function generate() {
     var qr = qrcode(0, 'L');
-    qr.addData(document.getElementById('qrtext').value || "QR Code by devCacti");
+    qr.addData(document.getElementById('qrtext').value || "qrcodes.devcacti.com");
     qr.make();
 
     var moduleCount = qr.getModuleCount();
@@ -121,7 +121,7 @@ function downloadPNG() {
 
         // Download as PNG
         var link = document.createElement('a');
-        var content = document.getElementById('qrtext').value || "QR Code by devCacti";
+        var content = document.getElementById('qrtext').value || "qrcodes.devcacti.com";
         // Sanitize content for filename: remove non-alphanumeric, replace spaces with underscores, limit length
         var safeContent = content.replace(/[^a-z0-9]+/gi, '_').replace(/^_+|_+$/g, '').substring(0, 32);
         link.download = `qrcode-${safeContent}.png`;
