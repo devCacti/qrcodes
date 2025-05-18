@@ -1,17 +1,6 @@
 function generate() {
-    var type = document.querySelector('input[name="qrtype"]:checked').value;
-    var input = document.getElementById('qrtext').value || "QR Code by devCacti";
-    var data = input;
-
-    if (type === "url") {
-        // Simple check: prepend https:// if missing
-        if (!/^https?:\/\//i.test(data)) {
-            data = "https://" + data;
-        }
-    }
-
     var qr = qrcode(0, 'L');
-    qr.addData(data);
+    qr.addData(document.getElementById('qrtext').value || "QR Code by devCacti");
     qr.make();
 
     var moduleCount = qr.getModuleCount();
