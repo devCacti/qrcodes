@@ -7,14 +7,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
-    <title>devCacti</title>
+    <title>QR Code Generator</title>
     <link rel="icon" href="Images/logo.png" type="image/png">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/images.css">
     <link rel="stylesheet" href="CSS/text.css">
     <link rel="stylesheet" href="CSS/containers.css">
     <link rel="stylesheet" href="CSS/icons.css">
-    
+    <link rel="stylesheet" href="CSS/buttons.css">
 </head>
 <body>
     <canvas></canvas>
@@ -22,10 +22,17 @@
     <div class="icons">
     </div>
     <main>
-        <br><br>
-        <h1 class="title">devCacti's QR CODE GENERATOR</h1>
-        <br><br>
-        <p></p>
+        <h1>devCacti's</h1>
+        <p class="medium">(Free)</p>
+        <h1 class="title">QR CODE GENERATOR</h1>
+        
+        <!-- The QR Code Generator part -->
+        <div class="qrcode-gen">
+            <h2>Create your custom QR Code</h2>
+            <button onclick="generate()">Generate</button>
+            <p></p>
+            <div id="qrcode" class="qrcode"></div>
+        </div>
     </main>
     <footer>
         <div class="center">
@@ -35,9 +42,11 @@
     </footer>
 
     <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
     <script src="JS/fluidsim.js"></script>
     <script src="JS/starrysky.js"></script>
     <script src="JS/javascript.js"></script>
+    <script src="JS/qrcode-generator.js"></script>
 </body> 
 </html>
 <!--https://devCacti.github.io -->

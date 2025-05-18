@@ -1,0 +1,24 @@
+button {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 10px white;
+    border: none;
+    color: white;
+    font-size: large;
+    padding: 10px 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgb(255, 225, 0);
+    color: rgb(255, 225, 0);
+    transform: scale(1.05);
+}
+
+button:active {
+    box-shadow: 0 0 10px rgb(255, 0, 200);
+    color: rgb(255, 0, 200);
+    transform: scale(1.025);
+    transition: all 0.25s;
+}

@@ -79,6 +79,12 @@ a.toc-index {
     margin: 0;
 }
 
+.medium {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
 .index-title h1,
 .index-title a {
     font-size: 2.5rem;

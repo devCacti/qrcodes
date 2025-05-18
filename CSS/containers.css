@@ -10,7 +10,8 @@ div.repositories,
 div.experience,
 div.aboutme,
 div.contact,
-div.toc {
+div.toc,
+div.qrcode-gen {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -32,6 +33,10 @@ div.toc {
     /* Blur Effect */
     backdrop-filter: blur(25px);
     --webkit-backdrop-filter: blur(25px);
+}
+
+div.qrcode {
+    border-radius: 15px;
 }
 
 .contact {
