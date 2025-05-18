@@ -123,3 +123,15 @@ footer div p {
     margin: 10px;
 
 }
+
+input {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 10px white;
+    border: none;
+    color: white;
+    font-size: large;
+    padding: 10px 25px;
+    transition: all 0.5s;
+    cursor: text;
+}

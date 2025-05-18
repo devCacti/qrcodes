@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="CSS/icons.css">
     <link rel="stylesheet" href="CSS/buttons.css">
 </head>
-<body>
+<body onload="generate()">
     <canvas></canvas>
     <div id="starrysky"></div>
     <div class="icons">
@@ -31,9 +31,19 @@
             <h2>Create your custom QR Code</h2>
             <input id="qrtext" title="QR Code Content">
             <br>
+            <label>
+                <input type="radio" name="qrtype" value="text" checked> Text
+            </label>
+            <label>
+                <input type="radio" name="qrtype" value="url"> URL
+            </label>
+            <br>
+
             <button onclick="generate()">Generate</button>
             <p></p>
             <div id="qrcode" class="qrcode"></div>
+            <p></p>
+            <button onclick="downloadPNG()">Download QRCode</button>
             <br>
         </div>
 
