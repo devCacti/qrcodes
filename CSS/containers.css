@@ -35,8 +35,9 @@ div.qrcode-gen {
     --webkit-backdrop-filter: blur(25px);
 }
 
-div.qrcode {
-    border-radius: 15px;
+div.qrcode{
+    border-radius: 1px;
+    padding: 0;
 }
 
 .contact {
