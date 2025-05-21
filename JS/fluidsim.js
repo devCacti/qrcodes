@@ -281,6 +281,7 @@ function update() {
 
     for (var i = 0, len = pointers.length; i < len; i++) {
         var pointer = pointers[i];
+        if (!pointer) continue; // <-- Add this line
 
         if (pointer.moved) {
             splat(pointer.x, pointer.y, pointer.dx, pointer.dy, pointer.color);
