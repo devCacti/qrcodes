@@ -367,9 +367,13 @@ function splat(x, y, dx, dy, color) {
 }
 
 function resizeCanvas() {
-
-    (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) && (canvas.width = canvas.clientWidth, canvas.height = canvas.clientHeight, initFramebuffers());
-
+    if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
+        canvas.width = canvas.clientWidth;
+        canvas.height = canvas.clientHeight;
+        canvas.style.width = canvas.clientWidth + "px";
+        canvas.style.height = canvas.clientHeight + "px";
+        initFramebuffers();
+    }
 }
 
 var count = 0;
@@ -422,7 +426,7 @@ document.addEventListener('touchmove', function (e) {
         pointer.x = x;
         pointer.y = y;
     }
-}, false);
+}, { passive: false });
 
 document.addEventListener('pointermove', function (e) {
     count++;
