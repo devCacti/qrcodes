@@ -396,7 +396,7 @@ document.addEventListener('mousemove', function (e) {
 });
 
 document.addEventListener('touchmove', function (e) {
-    e.preventDefault();
+    //!e.preventDefault();
 
     const touches = e.targetTouches;
 
