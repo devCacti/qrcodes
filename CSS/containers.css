@@ -22,9 +22,8 @@ div.qrcode-gen {
     right: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    max-height: 750px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
     background-color: rgba(54, 54, 54, 0.237);
     border-radius: 50px;
@@ -36,7 +35,6 @@ div.qrcode-gen {
 }
 
 div.qrcode{
-    border-radius: 1px;
     padding: 0;
 }
 
