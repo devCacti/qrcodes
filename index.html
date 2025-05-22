@@ -19,9 +19,8 @@
 <body onload="generate()">
     <canvas></canvas>
     <div id="starrysky"></div>
-    <div class="icons">
-    </div>
-    <main>
+    <div id="mainContent">
+        <br>
         <h1>devCacti's</h1>
         <p class="medium">(Free)</p>
         <h1 class="title">QR CODE GENERATOR</h1>
@@ -31,7 +30,7 @@
             <h2>Create your custom QR Code</h2>
             <input id="qrtext" title="QR Code Content">
             <br>
-
+            
             <button onclick="generate()">Generate</button>
             <p></p>
             <div id="qrcode" class="qrcode"></div>
@@ -39,9 +38,10 @@
             <button onclick="downloadPNG()">Download QRCode</button>
             <br>
         </div>
+    </div>
 
-        <div id="spacer" style="height: 130px;"></div>
-    </main>
+    <div id="spacer" style="height: 130px;"></div>
+    
     <footer>
         <div class="center">
             <p>Made with <span class="heart">🩷</span> by devCacti</p>
