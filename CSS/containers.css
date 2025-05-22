@@ -66,8 +66,14 @@ main {
     /* allows scrolling but still triggers touches */
 }
 
+#mainContent {
+    height: 100vh;
+}
+
 footer {
     position: fixed;
+    overflow: hidden;
+    touch-action: none;
     bottom: 0;
     left: 20px;
     right: 20px;
