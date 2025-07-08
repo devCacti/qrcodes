@@ -25,7 +25,7 @@ function generate() {
 
     // Start SVG with background and rounded border
     var svg = `<svg width="${svgSize}" height="${svgSize}" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" rx="${svgSize/12}" ry="${svgSize/12}" fill="#88878c"/>
+        <rect width="100%" height="100%" rx="${svgSize/12}" ry="${svgSize/12}" fill="#FFF"/>
     `;
 
     // Draw horizontal pills for each run of dark modules (skip finder patterns)
@@ -89,7 +89,7 @@ function generate() {
         // Outer ring (rounded rectangle)
         svg += `<rect x="${cx - outerW/2}" y="${cy - outerH/2}" width="${outerW}" height="${outerH}" rx="${outerRadius}" ry="${outerRadius}" fill="#222"/>`;
         // Inner ring (background color, rounded rectangle)
-        svg += `<rect x="${cx - innerW/2}" y="${cy - innerH/2}" width="${innerW}" height="${innerH}" rx="${innerRadius}" ry="${innerRadius}" fill="#88878c"/>`;
+        svg += `<rect x="${cx - innerW/2}" y="${cy - innerH/2}" width="${innerW}" height="${innerH}" rx="${innerRadius}" ry="${innerRadius}" fill="#FFF"/>`;
         // Pupil (rounded rectangle)
         svg += `<rect x="${cx - pupilW/2}" y="${cy - pupilH/2}" width="${pupilW}" height="${pupilH}" rx="${pupilRadius}" ry="${pupilRadius}" fill="#222"/>`;
     });
